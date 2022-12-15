@@ -1,0 +1,9 @@
+1 - Crie uma função que receba 2 valores inteiros como argumentos e retorne a sua soma. Se o valor da soma for negativo o método deverá retornar o valor 0.
+
+2 - Crie uma função que receba 3 valores reais como argumento e retorne o maior valor.
+
+3 - Crie uma função que receba dois valores reais como argumentos e retorne o valor da raiz quadrada da soma dos quadrados.
+ 
+4 - Crie uma função que receba um número inteiro como argumento e retorne o maior valor primo inferior a esse argumento. Se o argumento for negativo, a função deverá retornar o valor zero.
+
+5 - Crie uma função que receba 2 notas (F1 e F2) de um aluno e retorne um booleano indicando se o aluno passou. Para passar, a soma das notas deve ser igual ou superior a 19 e ambas devem ser superiores a 7.
