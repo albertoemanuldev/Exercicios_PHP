@@ -1,0 +1,9 @@
+1 - Crie uma função que receba dois valores inteiros como argumentos e retorne um valor booleano indicando se os números são divisíveis.
+
+2 - Crie uma função que receba um número inteiro e retorne a soma dos seus algarismos.
+
+3 - Crie uma função que receba 3 valores inteiros (a, b, c) e retorne um valor booleano true se a>b>c e false em caso contrário.
+
+4 - Crie uma função que verifique se um número é primo (deverá retornar um valor booleano). 
+
+5 - Crie uma função que receba um número inteiro n e retorne o n-ésimo número primo.
