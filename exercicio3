@@ -1,0 +1,7 @@
+1 - Escreva um script que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit ou vice-versa. Se ele digitar 1, é de Celsius para Farenheit, se digitar 2 é de Farenheit para Celsius, outro valor mostre uma mensagem de erro. Para cada conversão, chame a função correta.Conversão Celsius-Fahrenheit
+
+2 - Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos através de uma função. Seu script também deve fornecer a média dos três números, através de uma segunda função que chama a primeira.
+
+3 - Faça um programa que recebe três números do usuário, e identifica o maior através de uma função e o menor número através de outra função.
+
+4 - A probabilidade de dar um valor em um dado é 1/6 (uma em 6). Faça um script em PHP que simule 1 milhão de lançamentos de dados e mostre a frequência que deu para cada número.
