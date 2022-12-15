@@ -1,0 +1,124 @@
+Condicionais 
+
+------------- IF -----------------
+<?php
+$idade = 40;
+
+if($idade >= 18) {
+	echo "Menor de Idade";
+} else {
+	echo "Maior de Idade";
+}
+?>
+
+SE idade for maior ou igual a 18 ENTAO
+- mostrar na tela "Maior de Idade"
+CASO CONTRARIO
+- mostrar na tela "Menor de Idade"
+
+------------- OPERADOR TERNARIO -----------------
+OPERADOR TERNARIO: Basicamente o IF de uma linha
+Entre parenteses vai ter a condição, logo depois colocamos a interrogação para identificar operador ternario, RESULTADO POSITIVO : RESULTADO NEGATIVO;
+<?php
+$idade = 18;
+echo (idade < 18) ? "Menor de Idade" : "Maior de Idade";
+?>
+
+Se quiseremos adicionar em boolean será dessa forma
+<?php
+$idade = 18;
+$menorDeIdade = (idade < 18) ? true : false;
+
+if(menorDeIdade) {
+	echo "Menor";
+} else {
+	echo "Maior";
+}
+?>
+
+------------ NULL CAO ------------------
+Parecido com o TERNARIO mas irá funcionar um pouco diferente
+<?php
+$nome = "Alberto";
+$sobrenome = "Emanuel"ç
+
+
+$nomeCompleto = $nome;
+//isset usaremos para definir se esta setado 
+$nomeCompleto .= isset($sobrenome) ? $sobrenome " ";
+
+echo $nomeCompleto;
+?>
+
+------------ SWITCH ------------------
+<?php
+$tipo = "foto";
+
+if($tipo == "foto") {
+	echo "Exibindo uma foto":
+}
+if($tipo == "video") {
+	echo "Exibindo um video";
+}
+if($tipo == "texto") {
+	echo "Exibindo um texto"
+}
+?>
+
+// Para facilitar usaremos o switch
+
+<?php
+$tipo = "foto";
+switch($tipo) {
+	case "foto": // case = caso
+		echo "Exibindo foto":
+		break; //Aqui caso exiba a foto o codigo para
+	case "video";
+		echo "Exibindo video":
+		break;
+	case "texto";
+		echo "Exibindo texto":
+		break;
+}
+?>
+
+------------ LOOP WHILE ------------------
+//Usaremos para repetir X vezes, nesse caso utlizaremos no loop
+
+<?php
+$numero = 0;
+
+while($numero < 10 ){ //while = enquanto
+	echo "N: ".numero."<br/"; // como numero é menor que 10 irá se repetir infinitamente
+
+	$numero += 1;
+
+}
+
+------------ LOOP FOR ------------------
+<?php
+$numero = 0;
+
+while($numero < 10 ){ //while = enquanto
+	echo "N: ".numero."<br/"; // como numero é menor que 10 irá se repetir infinitamente
+
+	$numero += 1;
+
+}
+
+//1- definir a variavel e essa variavel sera definida antes de iniciar o loop
+for($numero = 0; $numero < 10; $numero += 1){ //2- definir a condicao
+	//3- ao fim de cada rodada de bloco ele vai executar o codigo que eu colocar na terceira etapa
+	echo "N: ".numero."<br/";
+
+}
+<?php
+// variavel auxiliar do FOR sera apenas uma letra por exemplo I
+for($numero = 0; $numero < 10; $numero += 1){ 
+	
+	echo "N: ".numero."<br/";
+
+for($i=0;$i<10;$i++){
+
+}
+?>
