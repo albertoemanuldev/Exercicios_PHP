@@ -1,0 +1,23 @@
+1- Solicite a entrada de um número e descubra se um número digitado é par ou ímpar.
+
+2- Crie um algoritmo que receba um número digitado pelo usuário e verifique se esse valor é positivo, negativo ou igual a zero. A saída deve ser: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
+
+3-Faça um algoritmo em PHP onde verifica se o valor da variável A é maior ou menor que o valor da variável B. A mensagem a ser impressa deve ser “A maior que B” ou “A menor que B”.
+
+4- Crie um algoritmo que pergunte ao usuário seu nome e sua idade. Em seguida verifique se a idade é maior ou menor que 18, exiba da seguinte forma: Fulano é maior de 18 e tem XX Anos ou Fulano não é maior de 18 e tem XX Anos.
+
+- - - - - - 
+- - - - - -
+- - - - - -
+- - - - - -
+- - - - - -
+- - - - - - Objetivo -Fazer essas caixas usando loops, lembrando que no código so pode usar apenas um unico traço e um único echo
+
+-
+- -
+- - -
+- - - -
+- - - - -
+- - - - - -
+- - - - - - - Objetivo -Fazer essas caixas usando loops, lembrando que no código so pode usar apenas um unico traço e um único echo
+
