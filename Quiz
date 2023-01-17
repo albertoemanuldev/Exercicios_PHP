@@ -1,0 +1,108 @@
+1º Questão
+Pergunta Simples sobre PHP
+Qual a função do operador "%"? Descreva sua função junto de um exemplo.
+Resposta:
+O operador % tem a função de módulo que condiciona ao resto de uma divisão,
+arrendondando seu resultado.
+Ex.
+$X = 5;
+$Y = 3;
+echo $X % $Y; 
+Resultado = 2
+ 
+-------------------------------------------------------------------------------------------
+
+2º Questão 
+Pergunta Sobre interação entre PHP e HTML
+Para que ocorra uma interação do usuário é necessário o uso de HTML, dado essa
+informação descreva quais termos são utilizados para essa funcionalidade e explique.
+Resposta:
+$_GET[''];
+$_POST[''];
+O Get e o Post executam a mesma função, coletar alguma informação do HTML, dado
+o nome do objeto, O Get pode ser visto na url da página, o Post no código fonte
+
+-------------------------------------------------------------------------------------------
+
+3º Questão
+Interpretação de Código
+Explique em qual linha do HTML é feita a conexão com php e como 
+1	<!DOCTYPE html>
+2	<html>
+3	<head>
+4	<!DOCTYPE html>
+5	<html>
+6	<head>
+7	<meta charset = "UTF-8">
+8	<title>Títulokk </title>
+9	</head>
+10
+11	<body>
+12
+13
+14
+15	<form method="POST">
+16	<input type="text" name="num"/>
+17	<br>
+18	<button type="submit" name="a" value="submit">Checar</button>
+19	</form>
+20
+21	<?php
+22	if (isset($_POST['num'])) {
+23
+24 	       $valor = $_POST['num'];
+25
+26	        if($valor % 2 == 0) {
+27	                echo "O número informado é pa";
+28	        }else{
+29	                echo "O número informado é impa";
+30	       };
+31
+32	};
+?>
+Resposta:
+Linha 15. Na tag form onde há o "...method="POST">" na qual faz com que a função
+POST funcione corretamente.
+
+-------------------------------------------------------------------------------------------
+
+4º Questão
+Há uma série de erros neste código, encontre-os e os conserte
+1	<!DOCTYPE html>
+2	<html>
+3	<head>
+4	<meta charset = "UTF-8">
+5	<title>Títulokk </title>
+6	</head>
+7
+8	<body>
+9
+10	<form method="GET">
+11	<input type="text" name="nome" placeholder="Digite seu nome"/>
+12	<input type="text" name="idade" placeholder="Digite sua idade"/>
+13	<br>
+14	<button type="submit" name="Check" value="submit">Checar</button>
+15	</form>
+16	
+17	<?php
+18	if (isset($_POST['Chek'])) {
+19	  
+20	        $nome = $_POST['nome'];
+21	        $idade = $_POST['idade'];
+22	
+23	        if($idade > 18) {
+24	                echo "$nome é maior de idade com seus idade anos;
+25	        }elseif($idade < 18){
+26	                "echo $nome é menor de idade com seus $idade aninhos";
+27	  
+28	       };
+29
+30	
+31	?>
+32
+33	</body>
+Resposta:
+Erros:Linha 12 "method="POST" 
+Linha 18 if (isset($_POST['Check'])) {
+Linha 24 echo "$nome é maior de idade com seus $idade anos";
+Linha 30 " };"
