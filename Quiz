@@ -1,108 +1,186 @@
-1º Questão
-Pergunta Simples sobre PHP
-Qual a função do operador "%"? Descreva sua função junto de um exemplo.
-Resposta:
-O operador % tem a função de módulo que condiciona ao resto de uma divisão,
-arrendondando seu resultado.
-Ex.
-$X = 5;
-$Y = 3;
-echo $X % $Y; 
-Resultado = 2
- 
--------------------------------------------------------------------------------------------
-
-2º Questão 
-Pergunta Sobre interação entre PHP e HTML
-Para que ocorra uma interação do usuário é necessário o uso de HTML, dado essa
-informação descreva quais termos são utilizados para essa funcionalidade e explique.
-Resposta:
-$_GET[''];
-$_POST[''];
-O Get e o Post executam a mesma função, coletar alguma informação do HTML, dado
-o nome do objeto, O Get pode ser visto na url da página, o Post no código fonte
-
--------------------------------------------------------------------------------------------
-
-3º Questão
-Interpretação de Código
-Explique em qual linha do HTML é feita a conexão com php e como 
-1	<!DOCTYPE html>
-2	<html>
-3	<head>
-4	<!DOCTYPE html>
-5	<html>
-6	<head>
-7	<meta charset = "UTF-8">
-8	<title>Títulokk </title>
-9	</head>
-10
-11	<body>
-12
-13
-14
-15	<form method="POST">
-16	<input type="text" name="num"/>
-17	<br>
-18	<button type="submit" name="a" value="submit">Checar</button>
-19	</form>
-20
-21	<?php
-22	if (isset($_POST['num'])) {
-23
-24 	       $valor = $_POST['num'];
-25
-26	        if($valor % 2 == 0) {
-27	                echo "O número informado é pa";
-28	        }else{
-29	                echo "O número informado é impa";
-30	       };
-31
-32	};
-?>
-Resposta:
-Linha 15. Na tag form onde há o "...method="POST">" na qual faz com que a função
-POST funcione corretamente.
-
--------------------------------------------------------------------------------------------
-
-4º Questão
-Há uma série de erros neste código, encontre-os e os conserte
-1	<!DOCTYPE html>
-2	<html>
-3	<head>
-4	<meta charset = "UTF-8">
-5	<title>Títulokk </title>
-6	</head>
-7
-8	<body>
-9
-10	<form method="GET">
-11	<input type="text" name="nome" placeholder="Digite seu nome"/>
-12	<input type="text" name="idade" placeholder="Digite sua idade"/>
-13	<br>
-14	<button type="submit" name="Check" value="submit">Checar</button>
-15	</form>
-16	
-17	<?php
-18	if (isset($_POST['Chek'])) {
-19	  
-20	        $nome = $_POST['nome'];
-21	        $idade = $_POST['idade'];
-22	
-23	        if($idade > 18) {
-24	                echo "$nome é maior de idade com seus idade anos;
-25	        }elseif($idade < 18){
-26	                "echo $nome é menor de idade com seus $idade aninhos";
-27	  
-28	       };
-29
-30	
-31	?>
-32
-33	</body>
-Resposta:
-Erros:Linha 12 "method="POST" 
-Linha 18 if (isset($_POST['Check'])) {
-Linha 24 echo "$nome é maior de idade com seus $idade anos";
-Linha 30 " };"
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz de PHP</title>
+        <meta charset = UTF-8>
+    </head>
+    <body>
+    <h1>Quiz de Programação</h1>
+    <p>1º)Para que serve o PHP?</p>
+    <p>a)PHP: Hypertext Preprocessor</p>
+    <p>b)Personal Hypertext Processor</p>
+    <p>c)Personal Hypertext Processor</p>
+    <p>d)Professional Hypertext Program</p>
+    <form action "quizz.php" method= "POST">
+        <input type = "submit" name = "Resposta1" value = "A"/>
+        <input type = "submit" name = "Resposta1" value = "B"/>
+        <input type = "submit" name = "Resposta1" value = "C"/>
+        <input type = "submit" name = "Resposta1" value = "D"/>
+    </form>
+    <p>2ª)Ao usar o método POST, as variáveis são exibidas na URL</p>
+    <p>()Verdadeiro</p>
+    <p>()Falso</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta2" value = "A"/>
+        <input type = "submit" name = "Resposta2" value = "B"/>
+    </form>
+    <p>3º)De Qual variavel foi digitada no formato errado?</p>
+    <p>a)$LuzAcesa = 1;</p>
+    <p>b)$luz_acesa = 1;</p>
+    <p>c)$Luz-Acesa = 1;</p>
+    <p>d)$Luz_Acesa = 0;</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta3" value = "A"/>
+        <input type = "submit" name = "Resposta3" value = "B"/>
+        <input type = "submit" name = "Resposta3" value = "C"/>
+        <input type = "submit" name = "Resposta3" value = "D"/>
+    </form>
+    <p>4º)Somente com "echo" é possivel obter uma saída de código</p>
+    <p>()Verdadeiro</p>
+    <p>()Falso</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta4" value = "A"/>
+        <input type = "submit" name = "Resposta4" value = "B"/>
+    </form>
+    <p>5º)Qual tentativa de adicionar a array Carros está correta?</p>
+    <p>a) $Carros = array(Fiat,Toyota,Nissan,Peugeot);</p>
+    <p>b) $Carros = array("fiat","toyota","nissan","peugeot")</p>
+    <p>c) $Carros = array("Fiat","Toyota","Nissan","Peugeot");</p>
+    <p>d) array = $Carros("Fiat","Toyota","Nissan","Peugeot");</p>
+    <p>e) $Carros = array("Fiat,Toyota,Nissan,Peugeot");</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta5" value = "A"/>
+        <input type = "submit" name = "Resposta5" value = "B"/>
+        <input type = "submit" name = "Resposta5" value = "C"/>
+        <input type = "submit" name = "Resposta5" value = "D"/>
+        <input type = "submit" name = "Resposta5" value = "E"/>
+    </form>
+    <p>6º)A sintaxe do PHP é mais parecida com:</p>
+    <p>a) C</p>
+    <p>b) Javascript</p>
+    <p>c) Html</p>
+    <p>d) CSS</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta6" value = "A"/>
+        <input type = "submit" name = "Resposta6" value = "B"/>
+        <input type = "submit" name = "Resposta6" value = "C"/>
+        <input type = "submit" name = "Resposta6" value = "D"/>
+    </form>
+    <p>7º)Qual a função do operador "%"?</p>
+    <p>a)Soma as variavéis</p>
+    <p>b)Multiplica as variavéis</p>
+    <p>c)Divide as variaveis e arredonda o resultado</p>
+    <p>d)Divide as variaveis</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta7" value = "A"/>
+        <input type = "submit" name = "Resposta7" value = "B"/>
+        <input type = "submit" name = "Resposta7" value = "C"/>
+        <input type = "submit" name = "Resposta7" value = "D"/>
+    </form>
+    <p>8º)Para que ocorra uma interação do usuário é necessário o uso de HTML com GET e POST, dado essa informação marque a alternativa correta. </p>
+    <p>a)Get só pega um valor se estiver antes dele</p>
+    <p>b)Ambos executam a mesma função da mesma forma</p>
+    <p>c)Enquanto o GET se localiza na url, o POST fica no código fonte</p>
+    <p>d)POST não pode pegar valor booleano</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta8" value = "A"/>
+        <input type = "submit" name = "Resposta8" value = "B"/>
+        <input type = "submit" name = "Resposta8" value = "C"/>
+        <input type = "submit" name = "Resposta8" value = "D"/>
+    </form>
+    <p>9º)Escolha a alternativa correta de como é feita a conexão do PHP e HTML, no HTML
+</p>
+    <p>a)"<"form method="POST">"</p>
+    <p>b)<"input type="text">"</p>
+    <p>c)"if (isset($_POST['num']))"</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta9" value = "A"/>
+        <input type = "submit" name = "Resposta9" value = "B"/>
+        <input type = "submit" name = "Resposta9" value = "C"/>
+    </form>
+    <p>10º)Dado seus conhecimentos em HTML e PHP escolha a alternativa correta</p>
+    <p>a)Para que um código entre HTML e PHP funcione o CSS é obrigatório</p>
+    <p>b)O HMTL pode ser considerado como uma linguagem de formatação de texto</p>
+    <p>c)PHP só pode funcionar se estiver com HTML</p>
+    <form action "quizz.php" method= "post">
+        <input type = "submit" name = "Resposta10" value = "A"/>
+        <input type = "submit" name = "Resposta10" value = "B"/>
+        <input type = "submit" name = "Resposta10" value = "C"/>
+    </form>
+    <?php
+    function main (){
+    $resposta1 = $_POST ["Resposta1"];
+    $resposta2 = $_POST ["Resposta2"];
+    $resposta3 = $_POST ["Resposta3"];
+    $resposta4 = $_POST ["Resposta4"];
+    $resposta5 = $_POST ["Resposta5"];
+    $resposta6 = $_POST ["Resposta6"];
+    $resposta7 = $_POST ["Resposta7"];
+    $resposta8 = $_POST ["Resposta8"];
+    $resposta9 = $_POST ["Resposta9"];
+    $resposta10 = $_POST ["Resposta10"];
+        if (!empty($resposta1)){
+            if ($resposta1 == "A")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta2)){
+            if ($resposta2 == "B")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta3)){
+            if ($resposta3 == "C")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta4)){
+            if ($resposta4 == "A")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta5)){
+            if ($resposta5 == "C")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta6)){
+            if ($resposta6 == "A")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta7)){
+            if ($resposta7 == "C")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta8)){
+            if ($resposta8 == "C")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta9)){
+            if ($resposta9 == "A")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+        if (!empty($resposta10)){
+            if ($resposta10 == "A")
+            echo "A resposta está correta.</br>";
+            }else{
+            echo "A resposta está incorreta.</br>";
+        };
+    };
+    main();
+    ?>
+    </body>
+</html>
